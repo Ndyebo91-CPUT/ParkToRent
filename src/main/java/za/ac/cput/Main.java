@@ -4,14 +4,21 @@ package za.ac.cput;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Hello World!");
+        Address add = new Address.AddressBuilder("22 Joe Slovo Street", "8553").build();
+        System.out.println("Address built using Builder:");
+        System.out.println(add);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Address add2 = new Address.AddressBuilder().setStreetAdress(" tyfubjuiy").setPostalAddress("7154364").build();
+        System.out.println("Address built using Builder:");
+        System.out.println(add2);
+
+        Address address = AddressFactory.createAddress("123 Main St", "Cityville");
+        System.out.println("Address built using factory:");
+        System.out.println(address);
+
+        Address address2 = AddressFactory.createAddress();
+        System.out.println("Address built using factory:");
+        System.out.println(address2);
     }
 }
