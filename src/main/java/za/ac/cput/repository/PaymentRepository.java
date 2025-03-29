@@ -1,5 +1,9 @@
 package za.ac.cput.repository;
 
+import za.ac.cput.domain.Payment;
+
+import java.util.ArrayList;
+
 /**
  * PaymentRepository.java
  * PaymentRepository model class
@@ -12,7 +16,7 @@ package za.ac.cput.repository;
 
 public class PaymentRepository implements iPaymentRepository{
     private static iPaymentRepository repository=null;
-    private List<Payment> paymentList;
+    private ArrayList<Payment> paymentList;
 
     private PaymentRepository(){
         paymentList= new ArrayList<Payment>();
@@ -24,7 +28,7 @@ public class PaymentRepository implements iPaymentRepository{
         return repository;
     }
     @Override
-    public List<Payment> getAll() {
+    public ArrayList<Payment> getAll() {
         return paymentList;
     }
 
@@ -64,6 +68,6 @@ public class PaymentRepository implements iPaymentRepository{
         }
         return false;
     }
-    {
+
 
 }
