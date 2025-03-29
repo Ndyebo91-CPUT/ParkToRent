@@ -61,13 +61,8 @@ public class Payment {
             this.paymentStatus = paymentStatus;
         }
 
-        public Builder() {
-
-        }
-
-        public Payment setPaymentId(int paymentId) {
+        public void setPaymentId(int paymentId) {
             this.paymentId = paymentId;
-            return null;
         }
 
         public void setPaymentAmount(Double paymentAmount) {

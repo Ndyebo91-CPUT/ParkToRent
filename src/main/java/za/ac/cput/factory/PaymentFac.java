@@ -18,7 +18,12 @@ public class PaymentFac {
 
 
             return new Payment.Builder()
-                    .setPaymentId(paymentId);
+                    .setPaymentId(paymentId)
+                    .setPaymentAmount(paymentAmount)
+                    .setPaymentMethod(paymentMethod)
+                    .setPaymentDate(paymentDate)
+                    .setPaymentStatus(paymentStatus)
+                    .build();
 
         }
 

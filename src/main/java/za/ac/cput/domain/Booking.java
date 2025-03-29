@@ -1,15 +1,5 @@
 package za.ac.cput.domain;
 
-/**
- * Booking.java
- * Booking model class
- *
- * @author : Ndyebo Qole
- * @studnr : 210018615
- * @group : 3I
- * @Java version: "21.0.3" 2024-04-16 LTS
- */
-
 public class Booking {
 
     private int bookingId;
@@ -23,6 +13,7 @@ public class Booking {
     public Booking(){
 
     }
+
     private Booking(Booking.Builder builder) {
         this.bookingId = builder.bookingId;
         this.startDate = builder.startDate;
@@ -61,9 +52,7 @@ public class Booking {
         return status;
     }
 
-
     public static class Builder {
-
         private int bookingId;
         private String startDate;
         private String endDate;
@@ -72,7 +61,7 @@ public class Booking {
         private double totalRentalCost;
         private String status;
 
-        public  Builder(){
+        public Builder(){
 
         }
 
@@ -94,6 +83,8 @@ public class Booking {
         public Builder setStartDate(String startDate) {
             this.startDate = startDate;
             return this;
+
+
         }
 
         public Builder setEndDate(String endDate) {

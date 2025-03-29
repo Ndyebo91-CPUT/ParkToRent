@@ -6,21 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Booking.java
- * Booking model class
+ * BookingRepository.java
+ * BookingRepository Model Class
  *
- * @author : Ndyebo Qole
- * @studnr : 210018615
- * @group : 3I
- * @Java version: "21.0.3" 2024-04-16 LTS
- */
-
-
+ * @Author: Ndyebo Qole 210018615
+ * @Student Number: 210018615
+ **/
 public class BookingRepository implements iBookingRepository {
     private static iBookingRepository repository= null;
     private List<Booking> bookingList;
 
-    protected BookingRepository(){
+    private BookingRepository(){
         bookingList= new ArrayList<Booking>();
     }
 
