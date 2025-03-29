@@ -2,12 +2,6 @@ package za.ac.cput.factory;
 
 import za.ac.cput.domain.Booking;
 
-/**iRepository.java
- iRepository Model Class
- @Author: Ndyebo Qole 210018615
- @Student Number: 210018615
- **/
-
 public class BookingFac {
 
     public static Booking createBooking(int bookingId, String startDate,

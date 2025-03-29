@@ -5,12 +5,13 @@ import za.ac.cput.domain.Booking;
 import java.util.ArrayList;
 import java.util.List;
 
-/**BookingRepository.java
-BookingRepository Model Class
-@Author: Ndyebo Qole 210018615
-@Student Number: 210018615
+/**
+ * BookingRepository.java
+ * BookingRepository Model Class
+ *
+ * @Author: Ndyebo Qole 210018615
+ * @Student Number: 210018615
  **/
-
 public class BookingRepository implements iBookingRepository {
     private static iBookingRepository repository= null;
     private List<Booking> bookingList;
@@ -28,7 +29,7 @@ public class BookingRepository implements iBookingRepository {
 
 
     @Override
-    public List<Booking> findAll() {
+    public List<Booking> getAll() {
         return bookingList;
     }
 

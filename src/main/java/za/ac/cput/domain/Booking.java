@@ -1,11 +1,5 @@
 package za.ac.cput.domain;
 
-/**iRepository.java
- iRepository Model Class
- @Author: Ndyebo Qole 210018615
- @Student Number: 210018615
- **/
-
 public class Booking {
 
     private int bookingId;
@@ -16,7 +10,7 @@ public class Booking {
     private double totalRentalCost;
     private String status;
 
-    public Booking() {
+    public Booking(){
 
     }
 
@@ -67,7 +61,7 @@ public class Booking {
         private double totalRentalCost;
         private String status;
 
-        public Builder() {
+        public Builder(){
 
         }
 
@@ -89,6 +83,8 @@ public class Booking {
         public Builder setStartDate(String startDate) {
             this.startDate = startDate;
             return this;
+
+
         }
 
         public Builder setEndDate(String endDate) {
@@ -134,5 +130,4 @@ public class Booking {
                 ", status='" + status + '\'' +
                 '}';
     }
-
 }
