@@ -1,5 +1,11 @@
 package za.ac.cput.domain;
 
+/**iRepository.java
+ iRepository Model Class
+ @Author: Ndyebo Qole 210018615
+ @Student Number: 210018615
+ **/
+
 public class Booking {
 
     private int bookingId;
@@ -9,6 +15,10 @@ public class Booking {
     private double insuranceDeposit;
     private double totalRentalCost;
     private String status;
+
+    public Booking() {
+
+    }
 
     private Booking(Booking.Builder builder) {
         this.bookingId = builder.bookingId;
@@ -57,6 +67,10 @@ public class Booking {
         private double totalRentalCost;
         private String status;
 
+        public Builder() {
+
+        }
+
         public Builder(int bookingId, String startDate, String endDate, double totalDurationHours, double insuranceDeposit, double totalRentalCost, String status) {
             this.bookingId = bookingId;
             this.startDate = startDate;
@@ -67,38 +81,58 @@ public class Booking {
             this.status = status;
         }
 
-        public void setBookingId(int bookingId) {
+        public Builder setBookingId(int bookingId) {
             this.bookingId = bookingId;
+            return this;
         }
 
-        public void setStartDate(String startDate) {
+        public Builder setStartDate(String startDate) {
             this.startDate = startDate;
+            return this;
         }
 
-        public void setEndDate(String endDate) {
+        public Builder setEndDate(String endDate) {
             this.endDate = endDate;
+            return this;
         }
 
-        public void setTotalDurationHours(double totalDurationHours) {
+        public Builder setTotalDurationHours(double totalDurationHours) {
             this.totalDurationHours = totalDurationHours;
+            return this;
         }
 
-        public void setInsuranceDeposit(double insuranceDeposit) {
+        public Builder setInsuranceDeposit(double insuranceDeposit) {
             this.insuranceDeposit = insuranceDeposit;
+            return this;
         }
 
-        public void setTotalRentalCost(double totalRentalCost) {
+        public Builder setTotalRentalCost(double totalRentalCost) {
             this.totalRentalCost = totalRentalCost;
+            return this;
         }
 
-        public void setStatus(String status) {
+        public Builder setStatus(String status) {
             this.status = status;
+            return this;
         }
 
         public Booking build() {
             return new Booking(this);
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "bookingId=" + bookingId +
+                ", startDate='" + startDate + '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", totalDurationHours=" + totalDurationHours +
+                ", insuranceDeposit=" + insuranceDeposit +
+                ", totalRentalCost=" + totalRentalCost +
+                ", status='" + status + '\'' +
+                '}';
     }
 
 }
