@@ -1,5 +1,10 @@
 package za.ac.cput.domain;
+/**
 
+ * author : Ndyebo Qole
+ * studnr : 210018615
+ * group : 3I
+ */
 public class Booking {
 
     private int bookingId;
