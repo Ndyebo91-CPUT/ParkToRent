@@ -1,5 +1,10 @@
 package za.ac.cput.factory;
+/**
 
+ * author : Ndyebo Qole
+ * studnr : 210018615
+ * group : 3I
+ */
 import za.ac.cput.domain.Booking;
 
 public class BookingFac {
